@@ -13,10 +13,9 @@ The Google Apps Script triggers automatically, parsing the JSON and generating c
 ![Processed Result Links](https://github.com/user-attachments/assets/756f0f64-5636-4ae8-af1b-5e472769b6dc)
 
 ### 3. Full Pipeline Video Demo
-Watch the end-to-end process from prompt execution to document generation.
-<div align="center">
-  <img src="https://github.com/user-attachments/assets/f5e0a998-6e3d-4271-95a3-ef04a1a82a34" alt="Pipeline Demo" width="100%" style="border-radius: 10px;">
-</div>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/f5e0a998-6e3d-4271-95a3-ef04a1a82a34" width="100%" alt="Pipeline Demo GIF">
+</p>
 
 ## ✨ Key Features
 * **Automated Compliance Check:** Validates math concepts against the 120-page GDPT 2018 framework.
