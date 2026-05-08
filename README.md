@@ -2,43 +2,34 @@
 
 An enterprise-grade automated pipeline that leverages Large Language Models (LLMs) and Google Apps Script to audit Mathematics educational materials against the Vietnam 2018 General Education Curriculum (GDPT 2018).
 
-## 📌 Overview
-This project automates the rigorous process of reviewing math exams, lesson plans, and exercise sheets. It cross-references content with official curriculum standards to ensure pedagogical accuracy and logical consistency.
+## 🚀 Usage & Demo
 
-## 🚀 Demo
-### System Workflow Demo
-![System Workflow Interface](https://your-image-link-here.com/workflow.png)
+### 1. Input: Segmented JSON Data
+Paste the raw JSON output from the LLM into Column A of the Google Sheet. The system supports batch processing for up to 10 files simultaneously.
+![Input JSON in Google Sheets](https://your-image-link-here.com/input-screenshot.png)
 
-### Automated Report Output
-![Generated Google Doc Report](https://your-image-link-here.com/report-sample.png)
+### 2. Output: Automated Report Links
+The Google Apps Script triggers automatically, parsing the JSON and generating clean, professional Google Docs report links in Column B.
+![Processed Result Links](https://your-image-link-here.com/output-screenshot.png)
 
-> **Video Demonstration:** [Watch the full pipeline in action here](https://your-video-link-here.com)
+### 3. Full Pipeline Video Demo
+Watch the end-to-end process from prompt execution to document generation.
+[![Video Demo](https://img.shields.io/badge/YouTube-Watch%20Demo-red?style=for-the-badge&logo=youtube)](https://your-video-link-here.com)
 
 ## ✨ Key Features
-* **Automated Compliance Check:** Validates every mathematical concept against the "Required Achievement" (Yêu cầu cần đạt) columns in the 120-page GDPT 2018 framework.
-* **Reverse Burden of Proof Logic:** Forces the AI to justify the validity of every question by locating specific curriculum references, minimizing hallucinations.
-* **Exhaustive Pedagogical Audit:** Detects formatting and standard errors (e.g., unsorted MCQ options, improper decimal separators per Vietnamese standards, missing variable domains).
-* **High-Throughput Batch Processing:** Handles up to 10 documents simultaneously with strict JSON output segmentation (`===CUT_HERE===`).
-* **End-to-End Automation:** Seamlessly transitions from AI-generated raw data to professionally formatted Google Docs via Google Apps Script.
+* **Automated Compliance Check:** Validates math concepts against the 120-page GDPT 2018 framework.
+* **Reverse Burden of Proof:** Forces the AI to justify every question with curriculum references.
+* **Batch Processing:** Uses `===CUT_HERE===` tokens to handle multiple documents in one run.
+* **Professional Formatting:** Auto-generates structured tables and pedagogical advice in Google Docs.
 
 ## 🛠️ System Architecture
-1.  **Ingestion:** User uploads multiple Math documents and reference files (GDPT 2018 Framework/Textbooks).
-2.  **Analysis:** The LLM (Gemini Pro/GPT-4) executes the `Master_Prompt.md` using a file-filtering algorithm to ignore reference materials and focus on test files.
-3.  **Data Extraction:** The system outputs structured JSON blocks for each document.
-4.  **Generation:** `Code.gs` (Google Apps Script) triggers, parses the JSON, and generates individual, shared Google Docs reports.
+1. **Ingestion:** LLM processes documents using `Master_Prompt.md`.
+2. **Segmentation:** Structured JSON is generated for each file.
+3. **Automation:** `Code.gs` parses the data and handles document creation and sharing permissions.
 
 ## 📂 Repository Structure
-* `Code.gs`: The core engine for JSON parsing and Google Docs generation.
-* `Master_Prompt.md`: The highly-constrained, multi-stage prompt for the LLM.
-
-## ⚙️ Setup Instructions
-1.  **Google Sheets:** Create a new sheet and open the Script Editor (*Extensions > Apps Script*).
-2.  **Deploy Code:** Copy the contents of `Code.gs` into the editor.
-3.  **LLM Configuration:** Use the provided `Master_Prompt.md` in your LLM interface (Gemini/ChatGPT).
-4.  **Run:** Paste the AI's output into Column A of your sheet to trigger the automatic report generation.
-
-## ⚠️ Disclaimer
-This tool is designed to assist professional reviewers. While highly accurate, all AI-generated reports should undergo a final human-in-the-loop (HITL) verification before official publication.
+* `Code.gs`: Core automation engine (Google Apps Script).
+* `Master_Prompt.md`: Highly-constrained prompt for educational audit.
 
 ---
 *Developed for Digital Transformation in Education.*
