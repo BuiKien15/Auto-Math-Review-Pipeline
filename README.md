@@ -6,7 +6,7 @@ An enterprise-grade automated pipeline that leverages Large Language Models (LLM
 
 ### 1. Input: Segmented JSON Data
 Paste the raw JSON output from the LLM into Column A of the Google Sheet. The system supports batch processing for up to 10 files simultaneously.
-![Input JSON in Google Sheets](https://your-image-link-here.com/input-screenshot.png)
+![Input JSON in Google Sheets](<img width="1907" height="855" alt="Image" src="https://github.com/user-attachments/assets/c6c9f4f1-433f-4a68-bd8a-66598e61011f" />)
 
 ### 2. Output: Automated Report Links
 The Google Apps Script triggers automatically, parsing the JSON and generating clean, professional Google Docs report links in Column B.
