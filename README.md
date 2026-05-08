@@ -10,7 +10,7 @@ Paste the raw JSON output from the LLM into Column A of the Google Sheet. The sy
 
 ### 2. Output: Automated Report Links
 The Google Apps Script triggers automatically, parsing the JSON and generating clean, professional Google Docs report links in Column B.
-![Processed Result Links]([https://your-image-link-here.com/output-screenshot.png](https://github.com/user-attachments/assets/756f0f64-5636-4ae8-af1b-5e472769b6dc)
+![Processed Result Links](https://github.com/user-attachments/assets/756f0f64-5636-4ae8-af1b-5e472769b6dc)
 
 ### 3. Full Pipeline Video Demo
 Watch the end-to-end process from prompt execution to document generation.
