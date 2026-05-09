@@ -17,6 +17,11 @@ Watch the end-to-end process from prompt execution to document generation.
 
 https://github.com/user-attachments/assets/f5e0a998-6e3d-4271-95a3-ef04a1a82a34
 
+### 4. Final Report Deep-Dive (Output Quality)
+Take a closer look at the generated Google Doc. The AI-driven report features beautifully structured tables, clear pedagogical advice, and strict curriculum references, making it instantly ready for expert review.
+
+LINK_VIDEO_SỐ_4_CỦA_BÁC_Ở_ĐÂY
+
 ## ✨ Key Features
 * **Automated Compliance Check:** Validates math concepts against the 120-page GDPT 2018 framework.
 * **Reverse Burden of Proof:** Forces the AI to justify every question with curriculum references.
